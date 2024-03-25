@@ -1,16 +1,20 @@
+import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
-import Model from "@/components/Model";
+import HowItWorks from "@/components/HowItWorks";
+
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <Navbar />
       <Hero />
       <Highlight />
-      <Model />
+      {/* <Model /> */}
+      <Features />
+      <HowItWorks />
     </main>
   );
 }
