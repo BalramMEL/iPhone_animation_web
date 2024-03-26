@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   color: white;
   width: 100dvw;
@@ -16,6 +17,10 @@ body {
   background: #000;
   border-color: #3b3b3b;
   user-select: none;
+}
+main {
+  touch-action: pan-y;
+  overflow-y: auto;
 }
 
 canvas {
