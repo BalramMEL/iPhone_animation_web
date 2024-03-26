@@ -31,7 +31,7 @@ const Footer = () => {
               <p key={link} className="font-semibold text-gray text-xs">
                 {link}{' '}
                 {i !== footerLinks.length - 1 && (
-                  <span className="mx-2"> | </span>
+                  <span className="md:mx-2 mx-1"> | </span>
                 )}
               </p>
             ))}

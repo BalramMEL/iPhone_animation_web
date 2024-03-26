@@ -9,6 +9,7 @@ import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber'
 import { View } from '@react-three/drei'
 import { models, sizes } from '@/constants'
+import { animateWithGsapTimeline } from '@/utils/animations'
 
 const Model = () => {
 
@@ -33,21 +34,21 @@ const Model = () => {
 
   const tl = gsap.timeline();
 
-//   useEffect(() => {
-//     if(size === 'large') {
-//       animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2', {
-//         transform: 'translateX(-100%)',
-//         duration: 2
-//       })
-//     }
+  useEffect(() => {
+    if(size === 'large') {
+      animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2', {
+        transform: 'translateX(-100%)',
+        duration: 2
+      })
+    }
 
-//     if(size ==='small') {
-//       animateWithGsapTimeline(tl, large, largeRotation, '#view2', '#view1', {
-//         transform: 'translateX(0)',
-//         duration: 2
-//       })
-//     }
-//   }, [size])
+    if(size ==='small') {
+      animateWithGsapTimeline(tl, large, largeRotation, '#view2', '#view1', {
+        transform: 'translateX(0)',
+        duration: 2
+      })
+    }
+  }, [size])
 
     useGSAP(() => {
         gsap.to("#heading", {
@@ -83,20 +84,22 @@ const Model = () => {
                           size={size}
                       />
 
-                      <Canvas
-                          className='w-full h-full'
-                          style={{
-                              position: 'fixed',
-                              right: 0,
-                              top: 0,
-                              left: 0,
-                              bottom: 0,
-                              overflow:'hidden'
-                          }}
-                          eventSource={document.getElementById('root')}
-                      >
-                          <View.Port />
-                      </Canvas>
+                      {typeof window !== 'undefined' && (
+                            <Canvas
+                                className='w-full h-full'
+                                style={{
+                                    position: 'fixed',
+                                    right: 0,
+                                    top: 0,
+                                    left: 0,
+                                    bottom: 0,
+                                    overflow: 'hidden'
+                                }}
+                                eventSource={document.getElementById('root')}
+                            >
+                                <View.Port />
+                            </Canvas>
+                        )}
                   </div>
 
                   <div className='mx-auto w-full'>

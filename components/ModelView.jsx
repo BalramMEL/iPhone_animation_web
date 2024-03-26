@@ -1,16 +1,12 @@
 
 
+import { Html, OrbitControls, PerspectiveCamera, View } from "@react-three/drei"
+
 import * as THREE from 'three'
-
-import Lights from "./Lights"
-import { Suspense } from "react"
-import Loader from "./Loader"
-import IPhone from "./IPhone"
-
-// import OrbitControls from "./OrbitControls";
-
-import {OrbitControls, PerspectiveCamera, View } from '@react-three/drei'
-
+import Lights from './Lights';
+import Loader from './Loader';
+import IPhone from './IPhone';
+import { Suspense } from "react";
 
 const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, size, item }) => {
   return (
@@ -32,7 +28,7 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
         enableZoom={false}
         enablePan={false}
         rotateSpeed={0.4}
-        target={new THREE.Vector3(0, 0, 0)}
+        target={new THREE.Vector3(0, 0 ,0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       /> 
 
@@ -46,7 +42,6 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, si
         </Suspense>
       </group>
     </View>
-    
   )
 }
 
