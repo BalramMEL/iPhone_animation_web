@@ -7,6 +7,7 @@ import Image from 'next/image'
 import React from 'react'
 import VideoCarousel from './VideoCarousel'
 
+
 const Highlight = () => {
 
   useGSAP(() => {
