@@ -1,36 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot 2024-03-27 111527](https://github.com/BalramMEL/iPhone_animation_web/assets/102988461/7244319e-86ba-4030-9e84-c1b3b1656482)
+![Screenshot 2024-03-27 111509](https://github.com/BalramMEL/iPhone_animation_web/assets/102988461/95feff88-5c1c-4cd0-ba84-fe4ab47bc575)
+![Screenshot 2024-03-27 111454](https://github.com/BalramMEL/iPhone_animation_web/assets/102988461/dad88e35-300d-4b20-aa1e-c4bc95375064)
+![Screenshot 2024-03-27 111405](https://github.com/BalramMEL/iPhone_animation_web/assets/102988461/898333da-a82c-4b68-9197-0c84ca669376)![Screenshot 2024-03-27 111426](https://github.com/BalramMEL/iPhone_animation_web/assets/102988461/19fc13e1-6123-4fac-92ef-9ee308d28ad1)
